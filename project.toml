@@ -1,0 +1,13 @@
+[project]
+id = "sample-java-maven-app"
+name = "Sample Java App"
+version = "1.0.0"
+
+[[build.buildpacks]]
+uri = "samples/java-maven"
+
+[[build.buildpacks]]
+uri = "samples/buildpacks/hello-processes/"
+
+[[build.buildpacks]]
+uri = "docker://cnbs/sample-package:hello-univers"
